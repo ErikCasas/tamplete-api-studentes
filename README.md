@@ -9,21 +9,31 @@ Planeación para la ceración de API publica para los estudiantes de Ada School
 
 ```JSON
 {
-"title":"Tarea", => String
-"description":"Completar tarea 1", => String
-"createdBy":"123123213", => IdStudent && ObjetcId
-"dueDate":"2013-03-10T02:00:00Z", => Date
-"priority":10,=> Number
-"isCompleted": "true", => Boolean
-"data":"{ }", => Object
+"title":"Tarea",
+"description":"Completar tarea 1",
+"createdBy":"123123213",
+"dueDate":"2013-03-10T02:00:00Z",
+"priority":10,
+"isCompleted": "true",
+"data":"{ }",
 }
 ```
 
-> [!NOTE]
-> Se implementa la propiedad data para que el estudiante tenga la posibilidad de añadir nuevas propiedades como por ejemplo "Category"
+```javascript
+{
+"title": String
+"description":String
+"createdBy": IdStudent && ObjetcId
+"dueDate": Date
+"priority" Number
+"isCompleted": Boolean
+"data": Object
+}
+```
 
-> [!NOTE]
-> Se implementa la propiedad createBy para poder responder con las tareas correspondientes a cada estudainte
+###### Se implementa la propiedad data para que el estudiante tenga la posibilidad de añadir nuevas propiedades como por ejemplo "Category"
+
+###### Se implementa la propiedad createBy para poder responder con las tareas correspondientes a cada estudainte
 
 ### EndPoint
 
@@ -40,11 +50,9 @@ Planeación para la ceración de API publica para los estudiantes de Ada School
 
 ---
 
-<details>
+### Lista de prioridades
 
-<summary>Lista de prioridades</summary>
-
-### Alta :warning:
+#### Alta :warning:
 
 - Definición del modelo para la tares (validar)
 - Implementación de Autenticación y autorización
@@ -56,7 +64,7 @@ Planeación para la ceración de API publica para los estudiantes de Ada School
   - **D**ELETE: ruta para eliminar una tarea en concreto
 - Funcionalidad de reinicio de datos cada 24h
 
-### Media :bangbang:
+#### Media :bangbang:
 
 - Manejo de query strings para paginación en caso de tener un gran volumen de tareas
   - Esto se realiza en la ruta "GET" /api/v1/tasks
@@ -66,9 +74,7 @@ Planeación para la ceración de API publica para los estudiantes de Ada School
 - Middlware para la validación de datos de entrada
 - Manejo de errres
 
-### Baja :heavy_exclamation_mark:
+#### Baja :heavy_exclamation_mark:
 
 - Optimización de rendimiento
 - Soporte para archivos adjuntos
-
-- </details>
