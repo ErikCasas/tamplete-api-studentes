@@ -1,6 +1,6 @@
 # Planning
 
-Planeación para la ceración de API publica para los estudiantes de Ada School
+Planeación para la creación de API publica para los estudiantes de Ada School
 
 > [!NOTE]
 > Se utlizará el rol del estudiante implementado en el token generado por la plataforma de Ada para dar acceso a cada endpoint definido en esta API.
