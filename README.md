@@ -7,18 +7,6 @@ Planeación para la creación de API publica para los estudiantes de Ada School
 
 ## Estructura
 
-```JSON
-{
-"title":"Tarea",
-"description":"Completar tarea 1",
-"createdBy":"123123213",
-"dueDate":"2013-03-10T02:00:00Z",
-"priority":10,
-"isCompleted": "true",
-"data":"{ }",
-}
-```
-
 ```javascript
 {
 "title": String
@@ -78,3 +66,5 @@ Planeación para la creación de API publica para los estudiantes de Ada School
 
 - Optimización de rendimiento
 - Soporte para archivos adjuntos
+- Limitación en la cantidad de peticiones
+- Limitación en la cantidad de datos
